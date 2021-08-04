@@ -3,7 +3,7 @@
     <string name="select_your_state">Select Your State</string>
 
     <string-array name="State">
-        <item>State Unassigned</item>
+        <item>Select</item>
         <item>Andaman and Nicobar Islands</item>
         <item>Andhra Pradesh</item>
         <item>Arunachal Pradesh</item>
