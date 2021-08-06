@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
    <color name="lgm">#FFC413</color>
+    <color name="rec">#1B9720</color>
+    <color name="act">#9F1C1C</color>
+    <color name="dec">#000000</color>
+    <color name="conf">#EC2214</color>
+    <color name="city">#360097</color>
+    <color name="background">#ECE5E5</color>
 </resources>

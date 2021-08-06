@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Covid-19 Tracker</string>
     <string name="select_your_state">Select Your State</string>
+    <string name="active">Active</string>
+    <string name="deceased">Deceased</string>
+    <string name="recovered">Recovered</string>
+    <string name="a">a</string>
 
     <string-array name="State">
         <item>Select</item>

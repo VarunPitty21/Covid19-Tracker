@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 }
 
     fun Go(view: View) {
-        if(state_name=="Select"){
+        if(state_name=="Select" ){
             Toast.makeText(this,"Select Your State",Toast.LENGTH_LONG).show()
         }
         else{
