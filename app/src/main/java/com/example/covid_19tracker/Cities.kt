@@ -11,6 +11,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.example.newsfeedapp.MySingleton
 import kotlinx.android.synthetic.main.activity_cities.*
+import org.json.JSONException
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -39,6 +40,7 @@ class Cities : AppCompatActivity() {
         val url = "https://api.covid19india.org/state_district_wise.json"
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             Response.Listener {
+                try{
                 val stateJsonObject = it.getJSONObject(state)
                 val district = stateJsonObject.getJSONObject("districtData")
                 val keys : Iterator<String> = district.keys()
@@ -58,6 +60,11 @@ class Cities : AppCompatActivity() {
                     citydata.add(city)
                 }
                 cAdapter.updatedata(citydata,city)
+                }
+                catch (e : JSONException){
+                    e.printStackTrace()
+                    Toast.makeText(this , " Something went wrong \n check Internet connection or restart the app",Toast.LENGTH_LONG).show()
+                }
             },
             Response.ErrorListener {
                 Toast.makeText(this, "Error Occured", Toast.LENGTH_SHORT).show()
