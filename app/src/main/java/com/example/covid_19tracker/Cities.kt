@@ -44,6 +44,9 @@ class Cities : AppCompatActivity() {
                 val keys : Iterator<String> = district.keys()
                 while(keys.hasNext()){
                     val cityName = keys.next()
+                    if(cityName=="Unknown"||cityName=="Other States"){
+                        continue
+                    }
                     city.add(cityName)
                     val c = district.getJSONObject(cityName)
                     val city = CityData(

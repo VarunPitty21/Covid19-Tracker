@@ -12,6 +12,8 @@
     <color name="act">#9F1C1C</color>
     <color name="dec">#000000</color>
     <color name="conf">#EC2214</color>
-    <color name="city">#360097</color>
-    <color name="background">#ECE5E5</color>
+    <color name="city">#A82424</color>
+    <color name="background">#616060</color>
+    <color name="head">#353735</color>
+    <color name="upper">#A4000000</color>
 </resources>

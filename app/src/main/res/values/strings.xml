@@ -5,6 +5,7 @@
     <string name="deceased">Deceased</string>
     <string name="recovered">Recovered</string>
     <string name="a">a</string>
+    <string name="covid_19_tracker">Covid-19 Tracker</string>
 
     <string-array name="State">
         <item>Select</item>
