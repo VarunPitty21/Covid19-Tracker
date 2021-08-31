@@ -37,7 +37,7 @@ class Cities : AppCompatActivity() {
 }
 
     fun fetch(){
-        val url = "https://api.covid19india.org/state_district_wise.json"
+        val url = "https://data.covid19india.org/state_district_wise.json"
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             Response.Listener {
                 try{
